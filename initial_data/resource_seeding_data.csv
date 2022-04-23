@@ -1,0 +1,10 @@
+﻿ResourceName,Weight,Kind,IsRenewable,IsTransferrable,IsWaste
+Population,0.1,Raw,yes,yes,no
+MetallicElements,0.1,Raw,no,yes,no
+Timber,0.1,Raw,yes,yes,no
+MetallicAlloys,0.4,Created,no,yes,no
+Electronics,0.5,Created,no,yes,no
+Housing,0.8,Created,no,yes,no
+MetallicAlloysWaste,-0.5,Waste,no,yes,yes
+ElectronicsWaste,-0.8,Waste,no,yes,yes
+HousingWaste,-0.4,Waste,no,yes,yes

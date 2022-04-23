@@ -1,0 +1,331 @@
+The schedules output for the given number of solutions generated at 3/12/2022 2:56:17 PM : 
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6488553418969045
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6468187027529098
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6446863231287836
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6424997225780178
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6402929219992226
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6380935072687117
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6488553418969045
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6468187027529098
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6446863231287836
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6424997225780178
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6402929219992226
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6488553418969045
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6468187027529098
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6446863231287836
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6424997225780178
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6488553418969045
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6468187027529098
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6446863231287836
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6488553418969045
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6468187027529098
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6488553418969045
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6507460218377807
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524304765821027
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6538368885294762
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6548802240898723
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6516406798014185
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6554604155743289
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6524423134699798
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6516406798014185
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.655460415574329
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6527526892463391
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524423134699798
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6516406798014185
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6547441874943325
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6524508653271863
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6527526892463391
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524423134699798
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6516406798014185
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6531547641604725
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6513962663350588
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524508653271863
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6527526892463391
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524423134699798
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6516406798014185
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
+[
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6137382786100646
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6250475186971308
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6341315564342566
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6412359737536151
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6466148727246697
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6505126275682224
+(TRANSFORM Carpania (INPUTS (Population 20) (MetallicElements 40)) (OUTPUTS (Population 20) (MetallicAlloys 20) (MetallicAlloysWaste 20)) EU(self):0.6494266908489168
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6513962663350588
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524508653271863
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6527526892463391
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6524423134699798
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6516406798014185
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6504511840167895
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6489617051449346
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6472465021073662
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6453679469289342
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6433780869823161
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6413200405701578
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6392292357494197
+(TRANSFER Carpania Atlantis ((Timber 50)) EU:0.6371345045944962
+]
