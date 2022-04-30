@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ai-scheduler": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Sreveria\" \"C:\\Users\\satishra\\Dropbox\\MyDocsLib\\MS-Vanderbilt\\0-Courses\\cs-5260-Artificial-Intelligence\\ai-scheduler\\initial_data\\resource_seeding_data.csv\" \"C:\\Users\\satishra\\Dropbox\\MyDocsLib\\MS-Vanderbilt\\0-Courses\\cs-5260-Artificial-Intelligence\\ai-scheduler\\initial_data\\country_resource_seeding_data.csv\" \"C:\\Users\\satishra\\Dropbox\\MyDocsLib\\MS-Vanderbilt\\0-Courses\\cs-5260-Artificial-Intelligence\\ai-scheduler\\output_data\\schedules.txt\" 3 5 .99 -.5 1 "
+    }
+  }
+}
