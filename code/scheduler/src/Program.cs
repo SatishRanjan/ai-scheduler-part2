@@ -17,14 +17,18 @@ namespace ai_scheduler
             /// <param name="outputScheduleFileName">The file name where the output schedule will be saved</param>
             /// <param name="numOutputSchedules">The number of ordered list of output schedule to be written to the output schedule file</param>
             /// <param name="depthBound">The maximum depth to search assuming the initial depth is 0</param>
-            /// <param name="frontierMaxSize">The priority queue size to limit the size of the frontier and the extent of search</param>
+            /// <param name="gammaValue">Configurable gamma value for the Logistics function</param>
+            /// <param name="c_val_failure_cost">Configurable C value failure cost factor to compute the expected utility</param>
+            /// <param name="k_val_logistics_function">Configurable K value to compute the expected utility</param>
             string myCountryName = "";
             string resourcesFileName = "";
             string initialWorldStateFileName = "";
             string outputScheduleFileName = "";
             uint numOutputSchedules = 10;
             uint depthBound = 5;
-            uint frontierMaxSize = 500;
+            double gammaValue = .9;
+            double c_val_failure_cost = .8;
+            double k_val_logistics_function = 1;
 
             if (args != null && args.Length > 1)
             {
@@ -34,7 +38,9 @@ namespace ai_scheduler
                 outputScheduleFileName = args[3];
                 numOutputSchedules = uint.Parse(args[4]);
                 depthBound = uint.Parse(args[5]);
-                frontierMaxSize = uint.Parse(args[6]);
+                gammaValue = double.Parse(args[6]);
+                c_val_failure_cost = double.Parse(args[7]);
+                k_val_logistics_function = double.Parse(args[8]);
             }
 
             Console.WriteLine($"myCountryName: {myCountryName}");
@@ -43,7 +49,9 @@ namespace ai_scheduler
             Console.WriteLine($"outputScheduleFileName: {outputScheduleFileName}");
             Console.WriteLine($"numOutputSchedules: {numOutputSchedules}");
             Console.WriteLine($"depthBound: {depthBound}");
-            Console.WriteLine($"frontierMaxSize: {frontierMaxSize}");
+            Console.WriteLine($"gammaValue: {gammaValue}");
+            Console.WriteLine($"c_val_failure_cost: {c_val_failure_cost}");
+            Console.WriteLine($"k_val_logistics_function: {k_val_logistics_function}");
 
             GameScheduler gameScheduler = new GameScheduler();
             gameScheduler.CreateMyCountrySchedule(
@@ -53,7 +61,9 @@ namespace ai_scheduler
                 outputScheduleFileName,
                 numOutputSchedules,
                 depthBound,
-                frontierMaxSize);
+                gammaValue,
+                c_val_failure_cost,
+                k_val_logistics_function);
         }
     }
 }

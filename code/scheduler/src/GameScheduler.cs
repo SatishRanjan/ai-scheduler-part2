@@ -14,7 +14,7 @@ namespace ai_scheduler.src
         private readonly DataProvider _dataProvider;
         private List<VirtualResource> _resources = new List<VirtualResource>();
         private VirtualWorld _initialStateOfWorld = new VirtualWorld();
-        private readonly ActionTransformer _actionTransformer = new ActionTransformer();
+        public GameManager _gameManager;
         private string _outputScheduleFileName;
         private uint _numOutputSchedules;
 
@@ -32,7 +32,9 @@ namespace ai_scheduler.src
         /// <param name="outputScheduleFileName">The file name where the output schedule will be saved</param>
         /// <param name="numOutputSchedules">The number of ordered list of output schedule to be written to the output schedule file</param>
         /// <param name="depthBound">The maximum depth to search assuming the initial depth is 0</param>
-        /// <param name="frontierMaxSize">The priority queue size to limit the size of the frontier and the extent of search</param>
+        /// <param name="gammaValue">Configurable gamma value for the Logistics function</param>
+        /// <param name="c_val_failure_cost">Configurable C value failure cost factor to compute the expected utility</param>
+        /// <param name="k_val_logistics_function">Configurable K value to compute the expected utility</param>
         public void CreateMyCountrySchedule(
             string myCountryName,
             string resourcesFileName,
@@ -40,7 +42,9 @@ namespace ai_scheduler.src
             string outputScheduleFileName,
             uint numOutputSchedules,
             uint depthBound,
-            uint frontierMaxSize)
+            double gammaValue = .9,
+            double c_val_failure_cost = .8,
+            double k_val_logistics_function = 1)
         {
             // Validat the inputs
             bool areInputValid = ValidateInputs(myCountryName, resourcesFileName, initialWorldStateFileName, outputScheduleFileName);
@@ -55,6 +59,10 @@ namespace ai_scheduler.src
             // Get the list of virtual resources and initial state of the virtual world from the csv files
             _resources = _dataProvider.GetResources(resourcesFileName);
             _initialStateOfWorld = _dataProvider.GetVirtualWorld(initialWorldStateFileName, _resources);
+
+            Utils.GAMMA_VALUE = gammaValue;
+            Utils.C_VAL_FAILURE_COST = c_val_failure_cost;
+            Utils.K_VAL_LOGISTICS_FN = k_val_logistics_function;
 
             // Set one of the country as self
             VirtualCountry myCountry = null;
@@ -74,132 +82,65 @@ namespace ai_scheduler.src
                 myCountry.IsSelf = true;
             }
 
-            // Call the function that generates the schedule
-            GenerateSchedules(_initialStateOfWorld, depthBound, frontierMaxSize);
-        }
+            // Create the game manager to process a proposed schedule of the self country to the list of participating countries
+            _gameManager = new GameManager(_resources, _initialStateOfWorld);
 
-        public void GenerateSchedules(VirtualWorld initialState, uint depthBound, uint frontierMaxSize)
-        {
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            if (initialState == null || initialState.VirtualCountries.Count == 0)
-            {
-                throw new ArgumentNullException("The countries with initial state cannot be null or empty");
-            }
+            // Generate the solution schedule from the game manager
+            PriorityQueue solutions = _gameManager.GenerateSchedules(_initialStateOfWorld, depthBound);
 
-            // Initialize the solutions as an empty priority queue
-            PriorityQueue solutions = new PriorityQueue();
-
-            // Initialize and add the initial world state to the frontier priority queue
-            PriorityQueue frontier = new PriorityQueue(frontierMaxSize);
-            frontier.Enqueue(initialState);
-
-            while (!frontier.IsEmpty())
-            {
-                VirtualWorld worldState = frontier.Dequeue();
-                // If the schedule list to the world state reaches the search depth bound, add it to the solution priority queue 
-                if (worldState.SearchDepth == depthBound)
-                {
-                    solutions.Enqueue(worldState);
-                }
-                else
-                {
-                    // Generate the successors
-                    List<VirtualWorld> successors = GenerateSuccessors(worldState);
-                    if (successors == null || successors.Count == 0)
-                    {
-                        continue;
-                    }
-
-                    foreach (VirtualWorld successor in successors)
-                    {
-                        frontier.Enqueue(successor);
-                    }
-                }
-            }
-
-            GenerateGameSchedulesOutput(solutions, _numOutputSchedules, _outputScheduleFileName);
             sw.Stop();
             Console.WriteLine($"Total time take for schedules (milliseconds): {sw.ElapsedMilliseconds}");
+
+            // Print the output schedule
+            GenerateGameSchedulesOutput(solutions, _numOutputSchedules, _outputScheduleFileName);
+
+            // Propose the solution schedule
+            bool outcome = ProposeSchedule(solutions);
+
+            // Print the outcome message
+            if (outcome)
+            {
+                Console.WriteLine($"Congratulations {myCountryName}, your proposed schedule has been acceped by paricipating countries.");
+            }
+            else
+            {
+                Console.WriteLine($"Sorry {myCountryName}, your proposed schedule has not been acceped by paricipating countries.");
+            }
         }
 
-        /// <summary>
-        /// This function generates the successor state of the world by applying the transformations and transfers
-        /// </summary>
-        /// <param name="currentState">The current state of the world</param>
-        /// <returns><see cref="List<VirtualWorld>"/></returns>
-        public List<VirtualWorld> GenerateSuccessors(VirtualWorld currentState)
+
+        public bool ProposeSchedule(PriorityQueue solution)
         {
-            List<VirtualWorld> successors = new List<VirtualWorld>();
-            if (currentState == null)
+            // If no solution is achieved just return
+            if (solution == null || solution.Items?.Count == 0)
             {
-                return successors;
+                return false;
             }
 
-            /*
-             * At this time to make the project functional, I'm taking the below approach to generate the successor
-             * If my country doesn't have the housing then it transforms the available elements to produce the raw materials needed for the housing
-             * First, if my county (self) doesn't have MatallicAlloys needed for the housing, it produces some
-             * Then it transfer Timber as well 
-             * Then produce housing
-             */
+            // Propose the highest utility schedule for self to the countries participating in the schedule
+            VirtualWorld proposedState = solution.Items.OrderByDescending(s => s.ExpectedUtilityForSelf).First();
+            List<TemplateBase> proposedSchedule = new List<TemplateBase>();
+            List<string> participatingCountries = new List<string>();
 
-            VirtualCountry myCountry = currentState.VirtualCountries.Where(c => c.IsSelf).FirstOrDefault();
-            List<TemplateBase> templates = TemplateProvider.GetAllTemplates();
-
-            VirtualResourceAndQuantity myCountryMetallicAlloys = myCountry.ResourcesAndQunatities.Where(vr => vr.VirtualResource.Name == "MetallicAlloys").FirstOrDefault();
-            // If there's no metallic alloy, apply the transformation to create some
-            if (myCountryMetallicAlloys != null && myCountryMetallicAlloys.Quantity == 0)
+            foreach (KeyValuePair<TemplateBase, List<string>> item in proposedState.ScheduleAndItsParticipatingConuntries)
             {
-                AlloyTransformTemplate alloyTransformTemplate = TemplateProvider.GetTransformTemplate("MetallicAlloys") as AlloyTransformTemplate;
-                if (alloyTransformTemplate != null)
+                proposedSchedule.Add(item.Key);
+                foreach (string participatingCountry in item.Value)
                 {
-                    // Increase the yield to produce the metallic alloys
-                    alloyTransformTemplate.IncreaseYield(20);
-                    alloyTransformTemplate.CountryName = myCountry.CountryName;
-                    VirtualWorld clone = currentState.Clone();
-                    clone.Parent = currentState;
-                    VirtualWorld transformedWorld = _actionTransformer.ApplyTransformTemplate(clone, alloyTransformTemplate);
-                    if (transformedWorld != null)
+                    if (!participatingCountries.Contains(participatingCountry))
                     {
-                        transformedWorld.SearchDepth++;
-                        successors.Add(transformedWorld);
+                        participatingCountries.Add(participatingCountry);
                     }
                 }
             }
 
-            // Transfer timber from country first country to the self
-            VirtualWorld clone1 = currentState.Clone();
-            clone1.Parent = currentState;
-            TransferTemplate transferTemplate = TemplateProvider.GetTransferTemplate();
-            transferTemplate.FromCountry = clone1.VirtualCountries[0].CountryName;
-            transferTemplate.ToCountry = myCountry.CountryName;
-            transferTemplate.ResourceAndQuantityMapToTransfer.Add("Timber", 50);
-            VirtualWorld transformedWorld1 = _actionTransformer.ApplyTransferTemplate(clone1, transferTemplate);
-            if (transformedWorld1 != null)
-            {
-                transformedWorld1.SearchDepth++;
-                successors.Add(transformedWorld1);
-            }
+            // Proposed the highes utility schedule for self to the participating countries
+            bool acceptanceResult = _gameManager.ProposeSchedule(proposedSchedule, participatingCountries, proposedState);
 
-            // If there're materials available then transform into the housing
-            if (myCountryMetallicAlloys != null && myCountryMetallicAlloys.Quantity > 0)
-            {
-                HousingTransformTemplate housingTransformTemplate = TemplateProvider.GetTransformTemplate("Housing") as HousingTransformTemplate;
-                housingTransformTemplate.IncreaseYield(5);
-                housingTransformTemplate.CountryName = myCountry.CountryName;
-                VirtualWorld clone = currentState.Clone();
-                clone.Parent = currentState;
-                VirtualWorld transformedWorld = _actionTransformer.ApplyTransformTemplate(clone, housingTransformTemplate);
-                if (transformedWorld != null)
-                {
-                    transformedWorld.SearchDepth++;
-                    successors.Add(transformedWorld);
-                }
-            }
-
-            return successors;
+            return acceptanceResult;
         }
 
         public void GenerateGameSchedulesOutput(PriorityQueue solutions, uint numberOfOutputSchedules, string outputScheduleFileName)
@@ -271,3 +212,5 @@ namespace ai_scheduler.src
         #endregion Private Members
     }
 }
+
+

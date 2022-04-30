@@ -39,12 +39,12 @@ namespace ai_scheduler.src
                 // For waste resource calculate the total weight of the Sum((weight of waste resource) * (resource quantity) * (waste material weight reduction factor))
                 else if (vrq.VirtualResource.Kind == ResourceKind.Waste && vrq.Quantity > 0)
                 {                    
-                    double wasteWeightFactor = Constants.WASTE_MATERIAL_WEIGHT_REDUCTIONFACTOR;
+                    double wasteWeightFactor = Utils.WASTE_MATERIAL_WEIGHT_REDUCTIONFACTOR;
 
                     // For electronics waste there's higher weight reduction factor
                     if (string.Equals(vrq.VirtualResource.Name, "ElectronicsWaste", StringComparison.OrdinalIgnoreCase))
                     {
-                        wasteWeightFactor = Constants.ELECTRONICS_WASTE_WEIGHT_REDUCTIONFACTOR;
+                        wasteWeightFactor = Utils.ELECTRONICS_WASTE_WEIGHT_REDUCTIONFACTOR;
                     }
 
                     totalWasteResourcesWeightTimesQuantity = totalWasteResourcesWeightTimesQuantity + vrq.VirtualResource.Weight * wasteWeightFactor * vrq.Quantity;
@@ -98,15 +98,15 @@ namespace ai_scheduler.src
 
             // Compute the discounted reward by raising the gamma value to the power of the number of operations applied to the current state
             // this is the depth of the current state is at in a schedule path
-            double discountedReward = Math.Pow(Constants.GAMMA_VALUE, currentState.ScheduleAndItsParticipatingConuntries.Count) * undiscountedRewardForTheCountry;
+            double discountedReward = Math.Pow(Utils.GAMMA_VALUE, currentState.ScheduleAndItsParticipatingConuntries.Count) * undiscountedRewardForTheCountry;
             return discountedReward;
         }
 
 
         public double CalcProbabilityOfACountryParticipatingInAScheduleToAccept(VirtualWorld currentState, string countryName)
         {
-            double k_val = Constants.K_VAL_LOGISTICS_FN;
-            double x_0 = Constants.X_0_LOGISTICS_FN;
+            double k_val = Utils.K_VAL_LOGISTICS_FN;
+            double x_0 = Utils.X_0_LOGISTICS_FN;
             double l_val = 1;
 
             // Calculate the discounted reward for the given country
@@ -174,7 +174,7 @@ namespace ai_scheduler.src
 
             // DR(c_i, s_j)
             double discountedRewardForTheCountry = DiscountedRewardForACountry(currentState, countryName);
-            double failure_cost_factor = Constants.C_VAL_FAILURE_COST;
+            double failure_cost_factor = Utils.C_VAL_FAILURE_COST;
 
             // EU(c_i, s_j)
             double expectedUtility = (probabilityOfCountriesParticipatingInASchedule * discountedRewardForTheCountry) + (1 - probabilityOfCountriesParticipatingInASchedule) * failure_cost_factor;
