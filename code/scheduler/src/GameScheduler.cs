@@ -103,7 +103,7 @@ namespace ai_scheduler.src
             // Print the outcome message
             if (outcome)
             {
-                Console.WriteLine($"Congratulations {myCountryName}, your proposed schedule has been acceped by paricipating countries.");
+                Console.WriteLine($"Congratulations {myCountryName}, your proposed schedule has been accepted by the participating countries.");
             }
             else
             {
@@ -138,7 +138,7 @@ namespace ai_scheduler.src
             }
 
             // Proposed the highes utility schedule for self to the participating countries
-            bool acceptanceResult = _gameManager.ProposeSchedule(proposedSchedule, participatingCountries, proposedState);
+            bool acceptanceResult = _gameManager.ProcessProposeSchedule(proposedSchedule, participatingCountries, proposedState);
 
             return acceptanceResult;
         }

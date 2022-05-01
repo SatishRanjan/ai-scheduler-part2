@@ -33,7 +33,7 @@ namespace ai_scheduler.src
         /// <param name="participatingCountries">The list of participating countries </param>
         /// <param name="proposedWorldState">The proposed macro world state</param>
         /// <returns></returns>
-        public bool ProposeSchedule(List<TemplateBase> proposedSchedule, List<string> participatingCountries, VirtualWorld proposedWorldState)
+        public bool ProcessProposeSchedule(List<TemplateBase> proposedSchedule, List<string> participatingCountries, VirtualWorld proposedWorldState)
         {
             // If the either of the input parameters are null or empty return false
             if (proposedSchedule == null
