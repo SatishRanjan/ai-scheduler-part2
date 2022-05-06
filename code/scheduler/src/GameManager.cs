@@ -9,7 +9,8 @@ using System.Diagnostics;
 namespace ai_scheduler.src
 {
     /// <summary>
-    /// The GameManger has the logic to generate the schedule, and the logic for a 
+    /// The GameManger has the logic to generate the schedule, and the logic for selecting a proposed schedule 
+    /// by a given country or the countries participating in a schedule
     /// </summary>
     public class GameManager
     {
